@@ -24,6 +24,7 @@ app.use(express.session());
 app.use(app.router);
 app.use(require('less-middleware')({
   src: __dirname + '/src/less',
+  paths  : [ 'public/components/bootstrap/less' ],
   dest: __dirname + '/public/stylesheets',
   prefix: '/stylesheets',
   compress: true
