@@ -1,0 +1,9 @@
+{
+  "name": "ezBlogQ",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": null,
+    "bootstrap": null
+
+  }
+}
