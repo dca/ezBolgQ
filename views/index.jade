@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    .masthead
+      ul.nav.nav-pills.pull-right
+        li.active
+          a='Home'
+        li
+          a='Admin'
+        li
+          a='Logout'
+      h3.muted='ezBlogQ'
+    hr
+    .jumbotron
+      h1='Hello'

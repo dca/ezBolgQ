@@ -22,7 +22,13 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-app.use(require('less-middleware')({ src: __dirname + '/public' }));
+app.use(require('less-middleware')({
+  src: __dirname + '/src/less',
+  // paths  : [ 'src/components/bootstrap/less' ],
+  dest: __dirname + '/public/stylesheets',
+  prefix: '/stylesheets',
+  compress: true
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
