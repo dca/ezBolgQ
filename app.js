@@ -4,12 +4,12 @@
  */
 
 var express = require('express'),
-    routes = require('./app/routes'),
-    user = require('./app/routes/user'),
-    http = require('http'),
-    path = require('path');
+    http    = require('http'),
+    path    = require('path');
 
-var app = express();
+var routes  = require('./app/routes');
+
+var app = module.exports = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -36,8 +36,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+// 統一管理route
+routes(app);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
