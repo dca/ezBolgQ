@@ -1,0 +1,37 @@
+extends ../layout
+
+block content
+  form.form-horizontal
+      .control-group
+        label.control-label(for='inputEmail') Email
+        .controls
+          input#inputEmail(type='text', placeholder='Email')
+      .control-group
+        label.control-label(for='inputPassword') Password
+        .controls
+          input#inputPassword(type='password', placeholder='Password')
+      .control-group
+        .controls
+          label.checkbox
+            input(type='checkbox')
+            | Remember me
+          button.btn(type='submit') Sign in
+
+  //- form(method='post')
+  //-   fieldset
+  //-     legend='帳號註冊'
+  //-     label='帳號：'
+  //-     input(type='text', name='name', placeholder='')
+  //-     span.help-block='帳號只能由英數字組成'
+
+  //-     label='密碼：'
+  //-       input(type='password', name='password', placeholder='')
+
+  //-     label='確認密碼：'
+  //-       input(type='password', name='password-repeat', placeholder='')
+
+  //-     label='信箱：'
+  //-       input(type='email', name='email', placeholder='')
+
+  //-     input.btn(type='submit')='Submit'
+
