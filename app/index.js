@@ -9,7 +9,6 @@ var express = require('express'),
 
 var routes  = require('./routes');
 
-var User    = require('./models/User')
 var app = module.exports = express();
 
 // all environments
