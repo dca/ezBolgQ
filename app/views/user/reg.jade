@@ -10,11 +10,16 @@ block content
         label.control-label(for='inputPassword') Password
         .controls
           input#inputPassword(type='password', placeholder='Password')
-      .control-group
+      .controls-group
+        label.control-label(for='inputPasswordAgain') password-repeat
+        .controls
+          input#inputPasswordAgain(type='password-repeat', placeholder='Password Repeat')
+  //- .control-group
         .controls
           label.checkbox
             input(type='checkbox')
             | Remember me
+
           button.btn(type='submit') Sign in
 
   //- form(method='post')
