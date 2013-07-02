@@ -9,6 +9,7 @@ var express = require('express'),
 
 var routes  = require('./routes');
 
+var User    = require('./models/User')
 var app = module.exports = express();
 
 // all environments
@@ -23,9 +24,9 @@ app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
 app.use(require('less-middleware')({
-  src: __dirname + '../src/less',
-  // paths  : [ 'src/components/bootstrap/less' ],
-  dest: __dirname + '../public/stylesheets',
+  src: __dirname + '/../src/less',
+  paths  : [ __dirname + '/../src/components/bootstrap/less' ],
+  dest: __dirname + '/../public/stylesheets',
   prefix: '/stylesheets',
   compress: true
 }));
