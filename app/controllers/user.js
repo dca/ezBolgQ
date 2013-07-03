@@ -3,8 +3,8 @@
  * GET users listing.
  */
 
-var User = require('../models/user');
-var Post = require('../models/post');
+var User = require('../models/User');
+var Post = require('../models/Post');
 
 exports.list = function(req, res){
   res.send("respond with a resource");
@@ -12,8 +12,8 @@ exports.list = function(req, res){
 
 exports.reg = function(req, res){
 
-    User.save();
-    Post.save();
+    // User.save();
+    // Post.save();
 
   res.render('user/reg', { title: '註冊' });
 };

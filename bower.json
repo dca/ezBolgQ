@@ -2,8 +2,9 @@
   "name": "ezBlogQ",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": null,
-    "bootstrap": null,
-    "font-awesome" : "3.2.1"
+    "font-awesome": "3.2.1",
+    "bootstrap": "~2.3.2",
+    "jquery": "~1.8.0"
+
   }
 }
