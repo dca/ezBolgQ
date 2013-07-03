@@ -42,6 +42,8 @@ ezblogq, 使用nodejs建立
 
             -   Jade
 
+            -   Jade Snippets
+
             -   Html5
 
             -   nodejs
