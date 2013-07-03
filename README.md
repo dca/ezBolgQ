@@ -10,7 +10,7 @@ ezblogq, 使用nodejs建立
 
 
 
--   Nodejs指令
+### Nodejs指令
 
 `npm install`
 
@@ -20,7 +20,7 @@ ezblogq, 使用nodejs建立
 
 
 
--   開發環境(會用到的軟體)
+### 開發環境(會用到的軟體)
 
     -   [nodejs][1]
 
@@ -52,4 +52,4 @@ ezblogq, 使用nodejs建立
 
 [6]: <https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?>
 
--   其他軟體
+### 其他軟體
