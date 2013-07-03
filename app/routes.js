@@ -15,8 +15,11 @@ module.exports = function(app){
     app.get('/', home);
     app.get('/reg', user.reg);
     app.get('/login', user.login);
-
     app.get('/users', user.list);
+
+    app.get('/post', post.list);
+    app.get('/post/new', post.add);
+    app.post('/post/new', post.add);
 
 }
 

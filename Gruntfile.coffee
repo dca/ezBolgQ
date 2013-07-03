@@ -38,15 +38,15 @@ module.exports = (grunt) ->
 
         regarde:
             js:
-                files: ["app/*.js"]
+                files: ["app.js", "app/**/*.js", "config/*.js"]
                 tasks: ["develop", "delayed-livereload"]
 
             css:
-                files: ["public/stylesheets/*.css"]
+                files: ["public/stylesheets/**/*.css"]
                 tasks: ["livereload"]
 
             jade:
-                files: ["app/views/*.jade"]
+                files: ["app/views/**/*.jade"]
                 tasks: ["livereload"]
 
     grunt.registerTask "delayed-livereload", "delayed livereload", ->
