@@ -22,11 +22,11 @@ ezblogq, 使用nodejs建立
 
 ### 開發環境(會用到的軟體)
 
-    -   [nodejs][1]
+-   [nodejs][1]
 
 [1]: <http://nodejs.org/>
 
-    -   [git][2]
+-   [git][2]
 
 [2]: <http://www.syntevo.com/smartgithg/>
 
@@ -34,21 +34,19 @@ ezblogq, 使用nodejs建立
 
 [3]: <http://www.sublimetext.com/2>
 
--   [Sublime Package Controll][4]
+-	[Sublime Package Controll][4]
 
 [4]: <http://wbond.net/sublime_packages/package_control>
 
-            -   JSformat
+	-   JSformat
 
-            -   Jade
+	-   Jade
 
-            -   Jade Snippets
+	-   Jade Snippets
 
-            -   Html5
+	-   Html5
 
-            -   nodejs
-
-
+	-   nodejs
 
 -   [Chrome][5]
 
