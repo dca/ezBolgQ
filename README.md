@@ -48,10 +48,14 @@ ezblogq, 使用nodejs建立
 
             -   nodejs
 
-    -   [Chrome][5]+[LiveReload][6]
+    -   [Chrome][5]
 
-[5]: <www.google.com/chrome/>
+[5]: <http://www.google.com/chrome/‎>
 
-[6]: <https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?>
+        -   [Live reload][6]
+
+[6]: <https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei>
+
+
 
 ### 其他軟體
