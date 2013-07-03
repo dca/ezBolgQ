@@ -3,6 +3,7 @@
  * GET home page.
  */
 var user    = require('./controllers/user.js');
+var post    = require('./controllers/post.js');
 
 
 module.exports = function(app){
