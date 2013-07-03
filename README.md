@@ -48,6 +48,8 @@ ezblogq, 使用nodejs建立
 
 	-   nodejs
 
+	-	MarkdownPreview
+
 -   [Chrome][5]
 
 [5]: <http://www.google.com/chrome/‎>
