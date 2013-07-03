@@ -16,6 +16,8 @@ ezblogq, 使用nodejs建立
 
 `npm install -g bower grunt-cli yo`
 
+`node app`
+
 
 
 -   開發環境(會用到的軟體)
