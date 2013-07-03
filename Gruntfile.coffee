@@ -34,7 +34,7 @@ module.exports = (grunt) ->
 
         develop:
             server:
-                file: "app"
+                file: "app.js"
 
         regarde:
             js:

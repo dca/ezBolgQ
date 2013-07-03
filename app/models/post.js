@@ -1,6 +1,6 @@
-var mongojs = require('mongojs');
-var db      = mongojs('mongodb://127.0.0.1/ezblogq_dev', ['post']);
-var Post    = db.post;
+var mongodb      = require('../../config/database')('post');
+    Post         = mongodb.post;
+
 
 exports.save = function(db){
     Post.save({name:'dca'}, function(err, data) {
