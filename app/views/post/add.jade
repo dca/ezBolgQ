@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  form.form-horizontal(action='/post/new', method='post')
+      .control-group
+        label.control-label(for='inputTitle') Title
+        .controls
+          input#inputTitle(type='text', name='title', placeholder='Title')
+      .control-group
+        label.control-label(for='inputContent') Content
+        .controls
+          textarea#inputContent(rows='7', name='content', placeholder='')
+      .control-group
+        .controls
+          //- label.checkbox
+          //-   input(type='checkbox')
+          //-   | Remember me
+          button.btn(type='submit') New Post
