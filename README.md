@@ -16,7 +16,7 @@ ezblogq, 使用nodejs建立
 
 `npm install -g bower grunt-cli`
 
-`node app`
+`node app grunt`
 
 
 
@@ -46,6 +46,10 @@ ezblogq, 使用nodejs建立
 
             -   nodejs
 
--   其他軟體
+    -   [Chrome][5]+[LiveReload][6]
 
-    -   LiveReload
+[5]: <www.google.com/chrome/>
+
+[6]: <https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?>
+
+-   其他軟體
