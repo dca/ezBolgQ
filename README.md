@@ -30,11 +30,11 @@ ezblogq, 使用nodejs建立
 
 [2]: <http://www.syntevo.com/smartgithg/>
 
-    -   [Sublime text][3]
+-   [Sublime text][3]
 
 [3]: <http://www.sublimetext.com/2>
 
-        -   [Sublime Package Controll][4]
+-   [Sublime Package Controll][4]
 
 [4]: <http://wbond.net/sublime_packages/package_control>
 
@@ -48,11 +48,13 @@ ezblogq, 使用nodejs建立
 
             -   nodejs
 
-    -   [Chrome][5]
+
+
+-   [Chrome][5]
 
 [5]: <http://www.google.com/chrome/‎>
 
-        -   [Live reload][6]
+-   [Live reload][6]
 
 [6]: <https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei>
 
