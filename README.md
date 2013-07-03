@@ -14,7 +14,7 @@ ezblogq, 使用nodejs建立
 
 `npm install`
 
-`npm install -g bower grunt-cli yo`
+`npm install -g bower grunt-cli`
 
 `node app`
 
