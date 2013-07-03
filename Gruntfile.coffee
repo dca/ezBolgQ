@@ -32,7 +32,29 @@ module.exports = (grunt) ->
             files: ['<%= jshint.files %>'],
             tasks: ['jshint','exec']
 
+        develop:
+            server:
+                file: "app"
 
+        regarde:
+            js:
+                files: ["app/*.js"]
+                tasks: ["develop", "delayed-livereload"]
+
+            css:
+                files: ["public/stylesheets/*.css"]
+                tasks: ["livereload"]
+
+            jade:
+                files: ["app/views/*.jade"]
+                tasks: ["livereload"]
+
+    grunt.registerTask "delayed-livereload", "delayed livereload", ->
+        done = @async()
+        setTimeout (->
+            grunt.task.run "livereload"
+            done()
+        ), 500
 
     # Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks 'grunt-contrib-jshint'
@@ -41,4 +63,8 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-exec'
 
     # Default task(s).
-    grunt.registerTask 'default', ['jshint']
+    grunt.loadNpmTasks "grunt-develop"
+    grunt.loadNpmTasks "grunt-regarde"
+    grunt.loadNpmTasks "grunt-contrib-livereload"
+    grunt.registerTask "default", ["livereload-start", "develop", "regarde"]
+
