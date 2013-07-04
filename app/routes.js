@@ -17,6 +17,9 @@ module.exports = function(app){
     app.get('/login', user.login);
     app.get('/users', user.list);
 
+    //關於此應用
+    app.get('/about', user.about);
+
     app.get('/post', post.list);
     app.get('/post/new', post.add);
     app.post('/post/new', post.add);

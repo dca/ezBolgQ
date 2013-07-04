@@ -21,3 +21,7 @@ exports.reg = function(req, res){
 exports.login = function(req, res){
   res.render('user/login', { title: '登入' });
 };
+
+exports.about = function(req, res){
+  res.render('user/about', { title: '關於' });
+};
