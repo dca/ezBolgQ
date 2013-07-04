@@ -4,10 +4,11 @@ module.exports = function(app, config) {
 
     app.configure(function() {
         app.use(express.compress());
+        console.log(config.root);
         app.use(require('less-middleware')({
-            src     : config.root + '/src/less',
             paths   : [ config.root + '/src/components/bootstrap/less'],
-            dest    : config.root + '[/public/stylesheets',
+            src     : config.root + '/src/less',
+            dest    : config.root + '/public/stylesheets',
             prefix  : '/stylesheets',
             compress: true
         }));
