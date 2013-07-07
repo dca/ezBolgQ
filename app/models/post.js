@@ -2,9 +2,15 @@ var mongodb      = require('../../config/database')('post');
     Post         = mongodb.post;
 
 
-exports.save = function(arg){
+exports.save = function(arg, callback){
     Post.save( arg, function(err, data) {
-        console.log(data);
+        if (err) {
+            callback(err);
+        }else{
+            // console.log(data);
+            callback(null, data);
+        }
+
     });
 };
 

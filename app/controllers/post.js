@@ -18,10 +18,12 @@ exports.add = function(req, res){
             title : req.body.title,
             content: req.body.content
         };
-        console.log('[Debug]', 'POST /post/new' , arg);
-        Post.save(arg);
+        // console.log('[Debug]', 'POST /post/new' , arg);
 
-        res.redirect('/post');
+        Post.save(arg, function(err, data) {
+            res.redirect('/post');
+        });
+
     }else{
         console.log('[Debug]', 'Get /post/new');
         res.render('post/add', { title: '新增文章' });
