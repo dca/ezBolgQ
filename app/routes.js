@@ -1,6 +1,6 @@
 
 /*
- * GET home page.
+ * GET route.
  */
 var user    = require('./controllers/user.js');
 var post    = require('./controllers/post.js');

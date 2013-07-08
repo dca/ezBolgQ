@@ -1,15 +1,15 @@
 extends ../layout
 
 block content
-  form.form-horizontal
+  form.form-horizontal(action="/login", method="post")
       .control-group
-        label.control-label(for='inputEmail') Email
+        label.control-label(for='inputUsername') username
         .controls
-          input#inputEmail(type='text', placeholder='Email')
+          input#inputUsername(type='text', placeholder='username', name="username")
       .control-group
         label.control-label(for='inputPassword') Password
         .controls
-          input#inputPassword(type='password', placeholder='Password')
+          input#inputPassword(type='password', placeholder='Password', name="password")
       .control-group
         .controls
           label.checkbox
