@@ -1,5 +1,5 @@
-// var request = require('supertest');
-// var app = require('../app');
+var request = require('supertest');
+var app = require('../app');
 
 // it('GET / should show the title', function(done) {
 //     request(app)
