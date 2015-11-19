@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
-    "test": "make test"
+    "test": "mocha test"
   },
   "dependencies": {
     "express": "4.6.1",
